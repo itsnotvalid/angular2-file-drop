@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "../build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "typeRoots": [ "../node_modules/@types" ],
+    "lib": ["dom", "es2015"]
+  },
+  "files": [
+    "./index.ts",
+    "../ambient.d.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules",
+    "typings"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "../aot",
+    "skipMetadataEmit": false
+}
+}
